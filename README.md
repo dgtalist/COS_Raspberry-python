@@ -1,3 +1,0 @@
-# COS
-
-chungang university
