@@ -1,1 +1,3 @@
+$ sudo su #관리자 권한으로 설치
+
 . <( wget -O - https://code.headmelted.com/installers/apt.sh )
