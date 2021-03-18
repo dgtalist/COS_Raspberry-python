@@ -1,0 +1,7 @@
+$ sudo apt-get upgrade
+$ sudo apt-get update
+
+$ sudo apt-get install ibus
+$ sudo apt-get install ibus-hangul
+$ sudo apt-get install fonts-unfonts-core
+$ reboot
