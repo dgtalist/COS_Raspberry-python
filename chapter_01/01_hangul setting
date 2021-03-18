@@ -1,0 +1,13 @@
+$ sudo apt-get update
+$ sudo apt-get upgrade
+
+$ sudo apt-get install ibus
+$ sudo apt-get install ibus-hangul
+$ sudo apt-get install fonts-unfonts-core
+$ reboot
+
+Raspberry Pi configuration
+1. Localisation > Keyboard : Generic 105-key PC(intl.) / Korean / Korean(101/104 key compatible)
+
+IBUS Preferences
+1. Input Method : Add > Hangul
