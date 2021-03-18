@@ -7,7 +7,7 @@ $ sudo apt-get install fonts-unfonts-core
 $ reboot
 
 Raspberry Pi configuration
-1. Localisation : Generic 105-key PC(intl.) / Korean / Korean(101/104 key compatible)
+1. Localisation > Keyboard : Generic 105-key PC(intl.) / Korean / Korean(101/104 key compatible)
 
 IBUS Preferences
 1. Input Method : Add > Hangul
