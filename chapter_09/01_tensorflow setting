@@ -1,3 +1,5 @@
+site : https://itnext.io/installing-tensorflow-2-3-0-for-raspberry-pi3-4-debian-buster-11447cb31fc4
+
 Step 0: Check Raspberry Pi (GNU/Linux 10 (Buster)), Python and Pip version.
 $ cat /etc/os-release
 $ python3 --version
