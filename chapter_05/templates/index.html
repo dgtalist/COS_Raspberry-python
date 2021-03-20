@@ -17,12 +17,6 @@
             <div>
                 <button onclick="led_off()">LED OFF</button>
             </div>
-            <div>
-                <button onclick="servo_on()">SERVO ON</button>
-            </div>
-            <div>
-                <button onclick="servo_off()">SERVO OFF</button>
-            </div>
         </div>
         <div id="result">
 
@@ -50,32 +44,6 @@
                 let result = document.querySelector("#result");
                 if(data=="ok"){  
                     result.innerHTML = "<h1>LED is stopping</h1>";
-                }else{
-                    result.innerHTML = "<h1>error</h1>";
-                }
-            });
-        }
-        function servo_on(){
-            fetch("/servo/on")
-            .then(response=> response.text())
-            .then(data=> {
-                console.log(data);
-                let result = document.querySelector("#result");
-                if(data=="ok"){  
-                    result.innerHTML = "<h1>SERVO is running</h1>";
-                }else{
-                    result.innerHTML = "<h1>error</h1>";
-                }
-            });
-        }
-        function servo_off(){
-            fetch("/servo/off")
-            .then(response=> response.text())
-            .then(data=> {
-                console.log(data);
-                let result = document.querySelector("#result");
-                if(data=="ok"){  
-                    result.innerHTML = "<h1>SERVO is stopping</h1>";
                 }else{
                     result.innerHTML = "<h1>error</h1>";
                 }
