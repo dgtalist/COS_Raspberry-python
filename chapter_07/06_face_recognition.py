@@ -2,11 +2,11 @@ import face_recognition
 import cv2
 import numpy as np
 
-imgShin = face_recognition.load_image_file('ImagesBasic/shinmina.jpg')
+imgShin = face_recognition.load_image_file('img/shinmina.jpg')
 imgShin = cv2.cvtColor(imgShin,cv2.COLOR_BGR2RGB)
 
 
-imgTest = face_recognition.load_image_file('ImagesBasic/test1.jpg')
+imgTest = face_recognition.load_image_file('img/test1.jpg')
 imgTest = cv2.cvtColor(imgTest,cv2.COLOR_BGR2RGB)
 
 faceLoc = face_recognition.face_locations(imgShin)[0]
