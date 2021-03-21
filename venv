@@ -17,7 +17,7 @@ Python 인터프리터를 선택하고 저장할 ./venv 디렉터리를 만들�
 
 
 $ python3 -m venv --system-site-packages ./venv
-$ source ./COS/bin/activate  # sh, bash, or zsh
+$ source ./venv/bin/activate  # sh, bash, or zsh
 
 가상 환경이 활성화되면 셸 프롬프트가 (venv)로 시작합니다.
 호스트 시스템 설정에 영향을 주지 않고 가상 환경 내에 패키지를 설치합니다. pip 업그레이드로 시작합니다.
