@@ -1,10 +1,10 @@
 import keras
 from keras.utils import to_categorical
-form keras import models, layers
+from keras import models, layers
 
 import numpy as np
 import pandas as pd
-import matpotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 from keras.datasets import cifar10
 (x,y), (xt,yt) = cifar10.load_data()
@@ -25,7 +25,7 @@ y1 = to_categorical(y)
 yt1 = to_categorical(yt)
 
 model = models.Sequential()
-model.add(layers.Con2D(
+model.add(layers.Conv2D(
     filters=16,
     kernel_size=4,
     padding='same',
@@ -36,7 +36,7 @@ model.add(layers.MaxPool2D(pool_size=2, padding='same'))
 model.add(layers.BatchNormalization())
 model.add(layers.Dropout(0.05))
 
-model.add(layers.Con2D(
+model.add(layers.Conv2D(
     filters=32,
     kernel_size=4,
     padding='same',
@@ -64,8 +64,7 @@ model.fit(x1, y1, batch_size=200, epochs=20, validation_split=0.2)
 score = model.evaluate(xt1, yt1)
 print(score)
 
-# input test image
-filename = car.jpg
+filename = 'car.jpg'
 
 from keras.preprocessing import image
 testimg = image.load_img(filename, target_size=(32,32))
@@ -73,10 +72,11 @@ img = image.img_to_array(testimg)
 plt.imshow(np.uint8(img))
 
 test = np.expand_dims(img, axis=0)
+
 test.shape
 
 test1 = test / 255.0
-output = model.predict(my1)
+output = model.predict(test1)
 print(filename, '=', label[np.argmax(output)])
 
 x_index = np.arange(len(label))
