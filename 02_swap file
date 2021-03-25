@@ -1,0 +1,21 @@
+swap size 변경
+
+1. size 확인
+$ free -h total used free shared buff/cache available Mem:
+
+2. swap memory 동작 정지
+$ sudo service dphys-swapfile stop
+
+3. swap memory 확장
+$ sudo nano /etc/dphys-swapfile
+
+4. file edit
+$ sudo nano /etc/dphys-swapfile
+: CONF_SWAPSIZE=2048 #1023, 2048 단위로 변경, 기본 100
+: 저장 후 종료
+
+5. swap memory 동작 시작
+$ sudo service dphys-swapfile start
+
+6. swap memory 확인
+$ free -h total used free shared buff/cache available Mem:
