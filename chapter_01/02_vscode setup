@@ -2,3 +2,6 @@ Visual Studio Setup
 
 $ sudo apt update
 $ sudo apt install code
+
+trouble shooting
+1. 한글 받침 표기 에러 : Settings > Text Editor > Font 에서 'Droid Sans Fallback' 을 삭제 
