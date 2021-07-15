@@ -4,22 +4,22 @@ import time
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 
-TRGI=23
+TRIG=23
 ECHO=24
 print("Distance measurement in progress")
 
-GPIO.setup(TRGI, GPIO.OUT)
+GPIO.setup(TRIG, GPIO.OUT)
 GPIO.setup(ECHO, GPIO.IN)
 
-GPIO.output(TRGI, False)
+GPIO.output(TRIG, False)
 print("Waiting for sensor to settle")
 time.sleep(2)
 
 try:
     while True:
-        GPIO.output(TRGI, True)
+        GPIO.output(TRIG, True)
         time.sleep(0.00001)
-        GPIO.output(TRGI, False)
+        GPIO.output(TRIG, False)
         
         while GPIO.input(ECHO)==0:
             start=time.time()
