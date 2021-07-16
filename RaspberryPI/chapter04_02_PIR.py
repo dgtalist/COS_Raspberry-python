@@ -15,9 +15,10 @@ try:
     while True:
         if GPIO.input(sensor) == 1:
             print("Motion Detected !")
-            time.sleep(0.2)
+            time.sleep(1)
         
         if GPIO.input(sensor) == 0:
+            print('clear')
             time.sleep(0.2)
             
 except KeyboardInterrupt:
