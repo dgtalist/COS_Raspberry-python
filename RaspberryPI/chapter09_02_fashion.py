@@ -10,7 +10,7 @@ fashion_mnist = keras.datasets.fashion_mnist
 #print(type(train_images))
 
 class_names = ['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat',
-               'Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot’]
+               'Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot']
 
 #print(train_images.shape)
 #print(len(train_labels))
@@ -44,7 +44,7 @@ model = keras.Sequential([
 
 model.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy',
-              metrics=['accuracy’])
+              metrics=['accuracy'])
 
 model.fit(train_images, train_labels, epochs=5)
 
