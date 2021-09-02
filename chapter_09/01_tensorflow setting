@@ -11,7 +11,7 @@ Step 4: Check if TF 2 has been installed correctly
 $ python3 
 >>> import tensorflow
 >>> tensorflow.__version__
-'2.3.0'
+'1.14.0'
 >>> exit()
 
 
