@@ -16,12 +16,12 @@ while True:
             break
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_LEFT:
-                turnLeft()
+                motor.turnLeft()
             if event.key == pygame.K_RIGHT:
-                turnRight()
+                motor.turnRight()
             if event.key == pygame.K_UP:
-                forward_l()
+                motor.forward_l()
             if event.key == pygame.K_DOWN:
-                Reverse()
+                motor.Reverse()
         if event.type == pygame.KEYUP:
-            stop()
+            motor.stop()
