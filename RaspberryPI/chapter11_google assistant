@@ -1,0 +1,12 @@
+MMM-detector 설치
+
+$ cd ~/MagicMirror/modules/
+~/modules $ git clone https://github.com/bugsounet/MMM-Detector
+~/modules $ cd MMM-Detector
+~/modules/MMM-Detector $ npm install
+
+MMM-GoogleAssistant 설치
+$  cd ~/MagicMirror/modules/
+~/modules $ git clone https://github.com/bugsounet/MMM-GoogleAssistant
+~/modules $ cd MMM-GoogleAssistant
+~/modules/MMM-GoogleAssistant $ npm install
