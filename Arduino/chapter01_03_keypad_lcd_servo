@@ -53,7 +53,7 @@ void loop(){
   if(data_count == Password_Length-1){
     lcd.clear();
 
-    if(!strcmp(Data, Master)){
+    if(strcmp(Data, Master) == 0){
       lcd.print("Correct");
       myservo.write(180); // 서보 열기 위치
       delay(5000);
